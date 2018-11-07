@@ -5,12 +5,108 @@
                 background-image:
                     radial-gradient(blue, pink);
             }
+            @import url(//fonts.googleapis.com/css?family=Cookie);
+
+body{
+	background-color: #ff38ff
+}
+div{
+	text-align:center;
+}
+.typo2{
+	font-size:4rem;
+	color:#f2395a;
+	text-transform:uppercase;
+	text-shadow:1px 1px #d10e31,
+				2px 2px #d10e31,
+				3px 3px #d10e31,
+				4px 4px #d10e31,
+				5px 5px #d10e31,
+				6px 6px #890920,
+				7px 7px #890920,
+				8px 8px #890920,
+	   9px 9px 13px rgba(0,0,0,0.5);
+	 font-family:cookie;
+}
+#heart {
+	position: relative;
+	width: 100px;
+	height: 90px;
+	animation: heartbeat 1.5s infinite;
+	margin:0 auto;
+}
+#heart:before,
+#heart:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background:  #ff00d0;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		 -o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	   -moz-transform-origin: 0 100%;
+		-ms-transform-origin: 0 100%;
+		 -o-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+}
+#heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		 -o-transform: rotate(45deg);
+			transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	   -moz-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		 -o-transform-origin: 100% 100%;
+			transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+	transform: scale( .75 );
+  }
+  20%
+  {
+	transform: scale( 1 );
+  }
+  40%
+  {
+	transform: scale( .75 );
+  }
+  60%
+  {
+	transform: scale( 1 );
+  }
+  80%
+  {
+	transform: scale( .75 );
+  }
+  100%
+  {
+	transform: scale( .75 );
+  }
+}
         </style>
         <title>2 Months!!;)</title>     
     </head>
 
     <body>
         <div id="grad"></div>
+        <div id="heart"></div>
         <center>
             <pre>
                 <font size="+4" style="color:pink">(:  HAPPY 2 MONTH ANNIVERSARY RYLEY!!  :)       </font>
