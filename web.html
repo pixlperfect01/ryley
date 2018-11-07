@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>2 Months!!;)</title> 
+        <title>2 Months!!;)</title>     
     </head>
 
     <body>
@@ -17,10 +17,27 @@
                 <font style="color:blue" size ="+2">How Much Do You Love Me? (1-100)</font>
             </center>
         </p>
-     
-        <form action="maltio:williamsj.poms.6a@gmail.com" enctype="text/plain"> 
-            <textarea name="message"></textarea>
-            <input type="submit">  
+     <?php 
+if(isset($_POST['submit'])){
+    $to = "williamsjpoms.6a@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = "Ryley";
+    $last_name = "Jenkins";
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['love'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['love'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    }
+?>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="message" maxlength="50"></br>
+Email:</br>
+            <input type="text" name="email">
+            <input type="submit" name="submit" value="submit"> 
         </form> 
     </body>
 
