@@ -8,7 +8,9 @@
                     radial-gradient(blue, lightblue);
 	     }
 		/* (red, pink) */
-		
+             #audio-example {
+             display: block;
+                            }
 		#submit {
     background-color: #23FF2E;
     -moz-border-radius: 5px;
@@ -204,8 +206,14 @@ div{
 	    <input type="text" class="inputsize" name="How_much_you_love_me" required="true" placeholder="How much do you think I love you?"><br><br>
             <button type="submit" name="submit" id="submit">Submit</button>
         </form> 
-	<audio controls name="audiofile" src="https://www.bensound.org/bensound-music/bensound-energy.mp3" type="audio/mp3"
- autoplay="autoplay" loop="true">
+	<audio controls autoplay id="audio-example"> 
+		<!-- One or more source files, each referencing the same audio but in a different file format. The browser will choose the first file which it is able to play. --> 
+		<source src="/wp-content/uploads/flamingos.ogg"> 
+		<source src="/wp-content/uploads/flamingos.mp3"> 
+	        Audio file is not working please put this in the complaints
+		<!-- You could use this fall-back feature to insert a JavaScript-based audio player. --> 
+	</audio>
+
     </body>
 
 
