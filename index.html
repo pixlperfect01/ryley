@@ -2,12 +2,32 @@
     <head>
 	
         <style>
-	     @import url(//fonts.googleapis.com/css?family=Cookie);
-             body{
-                 background-image:
-                    radial-gradient(red, pink);
-	     }
-		/* (red, pink) */
+	       @import url(//fonts.googleapis.com/css?family=Cookie);
+	        body {
+    background: background-image: radial-gradient(red,blue);;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 10s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {background-image: radial-gradient(red,blue);}
+    20% {background-image: radial-gradient(blue,green);}
+    40% {background-image: radial-gradient(green,red);}
+    60% {background-image: radial-gradient(red,green);}
+    80% {background-image: radial-gradient(green,blue);}
+    100% {background-image: radial-gradient(blue,red);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {background-image: radial-gradient(red,blue);}
+    20% {background-image: radial-gradient(blue,green);}
+    40% {background-image: radial-gradient(green,red);}
+    60% {background-image: radial-gradient(red,green);}
+    80% {background-image: radial-gradient(green,blue);}
+    100% {background-image: radial-gradient(blue,red);}
+}
              #audio-example {
              display: block;
                             }
